@@ -4,6 +4,8 @@
  */
 package helloworld;
 
+import java.util.Scanner;
+
 /**
  *
  * @author kietm
@@ -14,8 +16,23 @@ public class HelloWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int test = 5 + 9 * 3 - 10/2;
-        System.out.println("Test = "+test);
+//        System.out.print("Hello world 1");
+//        System.out.print("\n");
+//        System.out.println("Hello world 2");
+//        System.out.printf("Minh kiet co %d nguoi theo doi", 10000000);
+//        System.out.println();
+//
+//        int age = 22;
+//        String name = "Lai Minh Kiet";
+//        System.out.println("My age is: " + age + ", name is: " + name);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Your name is: ");
+        String yourName = scanner.nextLine();
+        System.out.println("Your age is: ");
+        int yourAge = scanner.nextInt();
+        System.out.println("My name is: " + yourName + " and age = " + yourAge);
+        scanner.close();
     }
 
 }
