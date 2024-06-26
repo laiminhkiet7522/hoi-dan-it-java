@@ -23,8 +23,10 @@ public class HelloWorld {
 //        System.out.println("Max = "+c);
         
         Scanner scanner = new Scanner(System.in);
+        
         System.out.println("First number: ");
         int firstNumber = scanner.nextInt();
+        
         System.out.println("Second number: ");
         int secondNumber = scanner.nextInt();
         
